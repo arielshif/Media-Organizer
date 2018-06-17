@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="/mediaorganizer2/papaparse.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<link rel="icon" href="favicon.ico">
+<title>Media Organizer</title>
+</head>
+<body>
+	<div id="dialog" title="Upload CSV File">
+	  <input type="file" id="csv-file" name="files" accept=".csv"/>
+	</div>
+<div data-role="page" id="pageone">
+
+  <div data-role="panel" id="revealPanel" data-display="reveal">
+    <h2 id="MovieT">Title Unavailable</h2>
+		<h3 id="MovieLoc">Location Unavailable</h3>
+		<img id="MovieI" alt="Movie Photo">
+<h4 id="MovieG">Genre Unavailable</h4>
+		<p id="MovieO">Overview Unavailable</p>
+		<p id="MovieC" style="  text-overflow: ellipsis !important;max-height: 100px !important;display: block !important;overflow: auto !important;">Cast Unavailable</p>
+
+		<p id="MovieR">Runtime Unavailable</p>
+		<a id="MovieW" href="#">Website <br></a>
+		<a id="MovieWI" href="#">IMDb Page<br></a>
+	<img src="att.png" alt="Powered By The Movie DB" width="95%" style="padding-top: 5%;">
+  </div>
+  <div data-role="header">
+    <h1>Media Organizer</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names">
+
+<ul id="myUL"></ul>
+  </div>
+
+  <div data-role="footer">
+    <h1>Made for and by the Shifrin Family. - 2018</h1>
+  </div>
+</div>
+
+</body>
+</html>
